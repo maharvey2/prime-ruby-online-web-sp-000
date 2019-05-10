@@ -1,5 +1,5 @@
 # Add  code here!
-
+=begin
 def prime?(num)
   n = 2
   while n < num
@@ -10,7 +10,7 @@ def prime?(num)
 end
 
 prime?(105557)
-
+=end
 
 =begin
 def prime?(num)
@@ -22,3 +22,15 @@ end
 
 prime?(105557)
 =end
+
+def prime?(num)
+  if num < 0 or num == 0 or num == 1
+    return false
+  else
+    (2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
+    end
+  end
+end
+
+puts prime?(105557)
