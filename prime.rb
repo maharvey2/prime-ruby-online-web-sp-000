@@ -1,5 +1,5 @@
 # Add  code here!
-=begin
+
 def prime?(num)
   n = 2
   while n < num
@@ -10,9 +10,9 @@ def prime?(num)
 end
 
 prime?(-105557)
-=end
 
 
+=begin
 def prime?(num)
   (2..(num - 1)).each do |n|
     return false if num % n == 0
@@ -21,3 +21,4 @@ def prime?(num)
 end
 
 prime?(105557)
+=end
